@@ -18,8 +18,6 @@ class AddPlayer extends Component {
 		this.setState({ player: e.currentTarget.value });
 	}
 
-
-
 	render() {
 		const { players } = this.state;
 
@@ -52,25 +50,4 @@ class AddPlayer extends Component {
 export default AddPlayer;
 
 
-// working:
-
-// 	render() {
-// 		const { player } = this.state;
-
-// 		return (
-// 			<React.Fragment>
-// 				<form onSubmit={ this.handleSubmit }>
-// 					<label>
-// 						Enter player's player:
-// 						<player 
-// 							onChange={ this.handleChange } 
-// 							value={ this.state.value } 
-// 							type="text" 
-// 						/>
-// 					</label>
-// 					<player type="submit" value="Submit" />
-// 				</form>
-// 			</React.Fragment>
-// 		);
-// 	}
 

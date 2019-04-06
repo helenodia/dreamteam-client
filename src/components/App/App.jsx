@@ -4,6 +4,7 @@ import history from "../../data/history";
 import AddPlayer from "../AddPlayer";
 import Teams from "../Teams";
 import Loading from "../Loading";
+import FourOhFour from "../FourOhFour";
 // import PlayersList from "../PlayersList";
 
 const App = ({ submitted }) => (
@@ -14,6 +15,7 @@ const App = ({ submitted }) => (
           <Route exact path="/" component={ AddPlayer } />
           <Route exact path="/teams" component={ Teams } />
         </Loading>
+          <Route component={ FourOhFour } />
       </Switch>
     </React.Fragment>
   </Router>
@@ -22,7 +24,7 @@ const App = ({ submitted }) => (
 export default App;
 
 
-       
+// check loading comp - - won't work w switch? 
 // { !submitted ? <AddPlayer /> : <Teams /> }
 // click dispatch changesubmitted from true to false
-// button click handler to move bw apges
+// button click handler to move bw pages
