@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import Header from "../Header";
+import PlayersList from "../PlayersList";
 
-// import PlayersList from "./PlayersList";
-
-class AddPlayer extends Component {
+class Players extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -11,21 +10,27 @@ class AddPlayer extends Component {
 			players: [],
 		}
 		this.handleChange = this.handleChange.bind(this);
-		// this.onSubmit = this.onSubmit.bind(this);
+		this.handleSubmit = this.handleSubmit.bind(this);
 	}
 
 	handleChange(e) {
 		this.setState({ player: e.currentTarget.value });
 	}
 
+	handleSubmit(e) {
+		e.preventDefault();
+		this.props.handleSubmit({ 
+			name: this.state.player,
+			rating: 2
+		});
+	}
+
 	render() {
-		const { players } = this.state;
 
 		return (
 			<React.Fragment>
 			        <Header>dreamteam</Header>
-
-				<form onSubmit={ () => this.props.handleSubmit(this.state) }>
+				<form onSubmit={ this.handleSubmit }>
 					<label>
 						Enter player's name:
 						<input 
@@ -36,18 +41,13 @@ class AddPlayer extends Component {
 					</label>
 					<input type="submit" value="Submit" />
 				</form>
-				<h2>Playing...</h2>
-					<ul>
-						{ players.map((player) => (
-							<li key = { player }> { player } </li>
-						))}
-					</ul>
+				<PlayersList />
 			</React.Fragment>
 		);
 	}
 };
 
-export default AddPlayer;
+export default Players;
 
 
 

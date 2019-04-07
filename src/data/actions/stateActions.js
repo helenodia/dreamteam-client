@@ -1,21 +1,28 @@
-export const addPlayer = (data) => {
+export const addPlayer = (player) => {
 	return {
-		type: "addPlayer",
-		data,
+		type: "ADD_PLAYER",
+		player,
 	}
 };
 
 export const reset = () => {
 	return {
-		type: "reset",
+		type: "RESET",
 	};
 };
 
 export const loaded = (teams) => {
 	return {
-		type: "loaded",
+		type: "LOADED",
 		teams,
 	};
+};
+
+export const setPlayers = (data) => {
+	return {
+		type: "SET_PLAYERS",
+		data,
+	}
 };
 
 

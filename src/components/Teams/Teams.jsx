@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-
-
+import Loading from "../Loading";
 
 class Teams extends Component {
 	constructor(props) {
@@ -24,10 +23,12 @@ class Teams extends Component {
 
 		return (
 			<React.Fragment>
-			<h1>Teams</h1>
-				<Link to="/">
-					<button>start over</button>
-				</Link>
+			<Loading>
+				<h1>Teams</h1>
+					<Link to="/">
+						<button>start over</button>
+					</Link>
+				</Loading>
 			</React.Fragment>
 		);
 	}

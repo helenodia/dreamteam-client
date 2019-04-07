@@ -4,7 +4,7 @@ const setInitial = () => initial;
 
 const addPlayer = (state, action) => ({ 
 	...state, 
-	players: [state.players, ...state.players] 
+	players: [action.player] 
 		// players: [action.data, ...state.players] 
 
 });
@@ -18,9 +18,9 @@ const loaded = (state, { teams }) => ({
 
 const reducer = (state, action) => { 
 	switch (action.type) { 
-		case "addPlayer": return addPlayer(state, action); 
-		case "loaded": return loaded(state, action);
-		case "reset": return setInitial();
+		case "ADD_PLAYER": return addPlayer(state, action); 
+		case "LOADED": return loaded(state, action);
+		case "RESET": return setInitial();
 		default: return state;
 	}
 };
