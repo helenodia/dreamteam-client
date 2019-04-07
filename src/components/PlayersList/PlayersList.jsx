@@ -1,13 +1,8 @@
 import React, { Component, Fragment } from "react";
-import Players from "../Players";
+// import Players from "../Players";
 
 class PlayersList extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			players: [],
-		}
-}
+
 
 	render() {
 		const { players } = this.props;
@@ -18,7 +13,7 @@ class PlayersList extends Component {
 				<h2>Playing...</h2>
 					<ul>
 						{ players.map((player) => (
-							<li key = { player }> { player } </li>
+							<li key = { player }> { players } </li>
 						))}
 					</ul>
 			</Fragment>

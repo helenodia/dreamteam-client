@@ -16,11 +16,14 @@ const loaded = (state, { teams }) => ({
 	teams,
 });
 
+const setPlayers = (state) => ({ ...state, players: state.players });
+
 const reducer = (state, action) => { 
 	switch (action.type) { 
 		case "ADD_PLAYER": return addPlayer(state, action); 
 		case "LOADED": return loaded(state, action);
 		case "RESET": return setInitial();
+		case "SET_PLAYERS": return setPlayers(state);
 		default: return state;
 	}
 };

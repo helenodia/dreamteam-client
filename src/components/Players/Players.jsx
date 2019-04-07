@@ -14,7 +14,7 @@ class Players extends Component {
 	}
 
 	handleChange(e) {
-		this.setState({ player: e.currentTarget.value });
+		this.setState({ player: e.currentTarget.value, rating: e.currentTarget.value });
 	}
 
 	handleSubmit(e) {
@@ -39,9 +39,18 @@ class Players extends Component {
 							type="text" 
 						/>
 					</label>
+					<label>
+						Enter player's experience:
+						<input 
+							onChange={ this.handleChange } 
+							value={ this.state.value } 
+							type="text" 
+						/>
+					</label>
 					<input type="submit" value="Submit" />
 				</form>
 				<PlayersList />
+				<button>clear players</button>
 			</React.Fragment>
 		);
 	}

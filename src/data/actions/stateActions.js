@@ -18,10 +18,10 @@ export const loaded = (teams) => {
 	};
 };
 
-export const setPlayers = (data) => {
+export const setPlayers = (players) => {
 	return {
 		type: "SET_PLAYERS",
-		data,
+		players,
 	}
 };
 

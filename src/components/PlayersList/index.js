@@ -1,5 +1,6 @@
-import { connect } from "PlayersList-redux";
+import { connect } from "react-redux";
 import PlayersList from "./PlayersList";
+import { setPlayers } from "../../data/actions/stateActions";
 
 const mapStateToProps = ({ players }) => ({ players });
 // 	return {
@@ -9,7 +10,7 @@ const mapStateToProps = ({ players }) => ({ players });
 // };
 
 const mapDispatchToProps = (dispatch) => ({
-		handleLoad: () => dispatch(getPlayers()),
+		handleLoad: () => dispatch(setPlayers()),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(PlayersList);
