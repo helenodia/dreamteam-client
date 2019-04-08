@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/dreamteam-client/precache-manifest.26d6d1d1c2303ff7b0db106f7a79f52e.js"
+  "/dreamteam-client/precache-manifest.73666e32cbafb46ceef25768930ff316.js"
 );
 
 workbox.clientsClaim();
