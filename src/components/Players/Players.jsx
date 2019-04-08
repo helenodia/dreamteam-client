@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Header from "../Header";
 import PlayersList from "../PlayersList";
-import Loading from "../Loading";
 import Grid from "react-css-grid";
 
 
@@ -42,7 +41,6 @@ class Players extends Component {
 
 		return (
 			<React.Fragment>
-				<Loading>
 					<Grid gap={10}>
 						<div className="grid background">
 							<div className="header background">
@@ -113,7 +111,6 @@ class Players extends Component {
 							</div>	
 						</div>
 					</Grid>	
-				</Loading>
 			</React.Fragment>
 		);
 	}

@@ -1,5 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const FourOhFour = () => <p>page not found</p>;
+const FourOhFour = () => <Link to="/"><div className="error"><p>PAGE NOT FOUND</p></div></Link>;
 
 export default FourOhFour;
