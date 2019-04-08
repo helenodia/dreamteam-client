@@ -10,27 +10,29 @@ class Players extends Component {
 		this.state = {
 			player: "",
 			players: [],
-			rating: "",
+			rating: "1",
 		}
 		this.handleChange = this.handleChange.bind(this);
-		this.handleRating = this.handleRating.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
+		this.handleOptionChange = this.handleOptionChange.bind(this);
 	}
 
 	handleChange(e) {
 		this.setState({ player: e.currentTarget.value });
 	}
 
-	handleRating(e) {
-		this.setState({ rating: e.currentTarget.value });
+	handleOptionChange(e) {
+		this.setState({
+			rating: e.target.value
+		});
 	}
 
 	handleSubmit(e, state, players) {
-		e.preventDefault();
-		this.props.handleSubmit({ 
-			name: this.state.player,
-			rating: this.state.rating,
-		});
+	e.preventDefault();
+	this.props.handleSubmit({ 
+		name: this.state.player,
+		rating: this.state.rating,
+	});
 		// this.setState({ ...state.player, players: this.state.player})
 	}
 
@@ -49,23 +51,48 @@ class Players extends Component {
 							<form className="container">
 								<label className="form-label">
 									Name:
-									<input 
-										className="form-input" 
-										onChange={ this.handleChange } 
-										value={ this.state.value } 
-										type="text" 
-									/>
 								</label>
-								<label className="form-label">
-									Experience(1-3):
-									<input 
-										className="form-input"
-										onChange={ this.handleRating } 
-										value={ this.state.value } 
-										type="text" 
-									/>
-								</label>
+
+								<input 
+									className="form-input" 
+									onChange={ this.handleChange } 
+									value={ this.state.value } 
+									type="text" 
+								/>
+					
+							    <div className="radio">
+							      <label className="form-label">
+							        <input 
+							        	type="radio" 
+							        	value="1" 
+							            checked={this.state.rating === '1'} 
+							            onChange={this.handleOptionChange} />
+							        "enthusiastic"
+							      </label>
+							    </div>
+							    <div className="radio">
+							      <label className="form-label">
+							        <input 
+							        	type="radio" 
+							        	value="2" 
+							            checked={this.state.rating === '2'} 
+							            onChange={this.handleOptionChange} />
+							        not too shabby
+							      </label>
+							    </div>
+							    <div className="radio">
+							      <label className="form-label">
+							        <input 
+							        	type="radio" 
+							        	value="3" 
+							            checked={this.state.rating === '3'} 
+							            onChange={this.handleOptionChange} />
+							        too bloody good
+							      </label>
+							    </div>
+
 								<button 
+									type="submit"
 									onClick={ this.handleSubmit }
 									className="btn-submit container-item-end">
 									Submit 

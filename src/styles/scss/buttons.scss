@@ -10,6 +10,7 @@
 	min-height: 4vh;
   	line-height: 4vh;
    	margin: auto;
+   	padding: 0.3rem;
   	width: calc(100% - 200px);
 
 	&:hover {
@@ -29,14 +30,14 @@
   	box-shadow: 10px 10px 0 0 #FFB80A;
   	color: #FFB80A;
 	background-color: #FFF;
-	margin: auto;
-	// position: relative;	
 	box-shadow: 10px 10px 0 0 #FFB80A;
 	font-size: 1rem;
 	min-height: 4vh;
   	line-height: 4vh;
    	margin: auto;
-  	width: calc(100% - 200px);
+   	margin-top: 2rem;
+   	padding: 0.3rem;
+  	width: 150%;
 
 	&:hover {
 		background-color: #FFB80A;
@@ -46,7 +47,6 @@
 
 	&:active {
 		background-color: #FFB80A;
-
 	}
 }
 

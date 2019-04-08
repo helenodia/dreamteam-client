@@ -36,6 +36,10 @@
 .body {
     grid-column: 1/2;
     grid-row: 3/6;
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 body{
@@ -57,20 +61,29 @@ body{
 	align-content: space-between;
 }
 
-input{
-	float: right;
+.form-label{
+	color: #FFF;
+	// padding-left: 1rem;
+	padding-bottom: 1rem;
+ }
+
+.form-input{
+	// // float: left;
 	display: flex;
 	flex-direction: column;
+	justify-content: flex-start;
+	align-content: center;
 	font-size: 1rem;
-	padding: 5px;
-	margin: 10px 30px 10px 10px;
-	justify-content: center;
+	min-height: 4vh;
+  	line-height: 4vh;
+   	margin-bottom: 2rem;
+   	// padding: 0.3rem;
 	background-color: #FFF;
 	border: 4px solid #FFB80A;
-	width: 11rem;
-	height: 3rem;
+  	width: 150%;
+	height: 2.5rem;
 	color: #FFB80A;
-	position: relative;	
+	// position: relative;	
 	box-shadow: 10px 10px 0 0 #FFB80A;
 
 	&:focus {
@@ -80,13 +93,9 @@ input{
 	}
 }
 
-.form-label{
-	color: #FFF;
-	// margin-left:70rem;
-}
-
-.form-input{
-
+.radio{
+	border: 0;
+	align-self: flex-start;
 }
 
 

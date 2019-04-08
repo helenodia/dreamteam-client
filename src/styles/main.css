@@ -21,6 +21,7 @@
   min-height: 4vh;
   line-height: 4vh;
   margin: auto;
+  padding: 0.3rem;
   width: calc(100% - 200px); }
   .btn-reset:hover {
     background-color: #4185DE;
@@ -35,13 +36,14 @@
   box-shadow: 10px 10px 0 0 #FFB80A;
   color: #FFB80A;
   background-color: #FFF;
-  margin: auto;
   box-shadow: 10px 10px 0 0 #FFB80A;
   font-size: 1rem;
   min-height: 4vh;
   line-height: 4vh;
   margin: auto;
-  width: calc(100% - 200px); }
+  margin-top: 2rem;
+  padding: 0.3rem;
+  width: 150%; }
   .btn-submit:hover {
     background-color: #FFB80A;
     color: #FFF;
@@ -103,7 +105,11 @@ a {
 
 .body {
   grid-column: 1/2;
-  grid-row: 3/6; }
+  grid-row: 3/6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
 
 body {
   font-size: 1rem;
@@ -121,27 +127,32 @@ body {
   justify-content: center;
   align-content: space-between; }
 
-input {
-  float: right;
+.form-label {
+  color: #FFF;
+  padding-bottom: 1rem; }
+
+.form-input {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
   font-size: 1rem;
-  padding: 5px;
-  margin: 10px 30px 10px 10px;
-  justify-content: center;
+  min-height: 4vh;
+  line-height: 4vh;
+  margin-bottom: 2rem;
   background-color: #FFF;
   border: 4px solid #FFB80A;
-  width: 11rem;
-  height: 3rem;
+  width: 150%;
+  height: 2.5rem;
   color: #FFB80A;
-  position: relative;
   box-shadow: 10px 10px 0 0 #FFB80A; }
-  input:focus {
+  .form-input:focus {
     background-color: #FFB80A;
     color: #FFF;
     border: 4px solid white; }
 
-.form-label {
-  color: #FFF; }
+.radio {
+  border: 0;
+  align-self: flex-start; }
 
 /*# sourceMappingURL=main.css.map */
