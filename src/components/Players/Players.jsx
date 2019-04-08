@@ -43,9 +43,9 @@ class Players extends Component {
 			<React.Fragment>
 					<Grid gap={10}>
 						<div className="grid background">
-							<div className="header background">
+							<div className="header ">
 								<Link to="/">
-							    	<Header className="header">DREAMTEAM</Header>
+							    	<Header>DREAMTEAM</Header>
 							    </Link>
 							</div>
 

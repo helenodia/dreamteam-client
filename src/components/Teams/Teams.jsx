@@ -31,7 +31,7 @@ class Teams extends Component {
 								</Link>
 							</div>
 
-							<div className="body body-teams">
+							<div className="body">
 								<h2 className="subheader subheader-a">TEAM A</h2>
 								<div className="team-list-a">
 									<p>{teams}</p>
@@ -40,7 +40,7 @@ class Teams extends Component {
 								<button className="btn-shuffle">SHUFFLE TEAMS</button>
 							</div>	
 
-							<div className="sidebar sidebar-teams">
+							<div className="sidebar">
 								<h2 className="subheader subheader-b">TEAM B</h2>
 								<div className="team-list-b">
 									<p>{teams}</p>
