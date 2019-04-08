@@ -11,6 +11,7 @@ const App = ({ submitted }) => (
     <React.Fragment>
       <Switch>
           <Route exact path="/" component={ Players } />
+          <Route exact path="/teams" component={ Teams } />
           <Route component={ FourOhFour } />
       </Switch>
     </React.Fragment>
@@ -26,4 +27,3 @@ export default App;
 // button click handler to move bw pages
 
 
-          // <Route exact path="/teams" component={ Teams } />

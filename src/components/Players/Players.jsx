@@ -47,10 +47,10 @@ class Players extends Component {
 						</div>
 
 						<div className="body background"> 
-							<h3>Add your players:</h3>   
+							<h3>ADD PLAYERS:</h3>   
 							<form className="container">
 								<label className="form-label">
-									Name:
+									NAME:
 								</label>
 
 								<input 
@@ -95,7 +95,7 @@ class Players extends Component {
 									type="submit"
 									onClick={ this.handleSubmit }
 									className="btn-submit container-item-end">
-									Submit 
+									SUBMIT 
 								</button>
 							</form>
 						</div>
