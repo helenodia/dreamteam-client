@@ -1,13 +1,13 @@
 {
   "main.css": "/dreamteam-client/static/css/main.7b3f5f9f.chunk.css",
-  "main.js": "/dreamteam-client/static/js/main.f5d6786b.chunk.js",
-  "main.js.map": "/dreamteam-client/static/js/main.f5d6786b.chunk.js.map",
+  "main.js": "/dreamteam-client/static/js/main.819a28de.chunk.js",
+  "main.js.map": "/dreamteam-client/static/js/main.819a28de.chunk.js.map",
   "runtime~main.js": "/dreamteam-client/static/js/runtime~main.0948dc5f.js",
   "runtime~main.js.map": "/dreamteam-client/static/js/runtime~main.0948dc5f.js.map",
   "static/js/2.63a4ac71.chunk.js": "/dreamteam-client/static/js/2.63a4ac71.chunk.js",
   "static/js/2.63a4ac71.chunk.js.map": "/dreamteam-client/static/js/2.63a4ac71.chunk.js.map",
   "index.html": "/dreamteam-client/index.html",
-  "precache-manifest.5a1ac513dfc5d2ac9af4a8af740b6799.js": "/dreamteam-client/precache-manifest.5a1ac513dfc5d2ac9af4a8af740b6799.js",
+  "precache-manifest.26d6d1d1c2303ff7b0db106f7a79f52e.js": "/dreamteam-client/precache-manifest.26d6d1d1c2303ff7b0db106f7a79f52e.js",
   "service-worker.js": "/dreamteam-client/service-worker.js",
   "static/css/main.7b3f5f9f.chunk.css.map": "/dreamteam-client/static/css/main.7b3f5f9f.chunk.css.map"
 }
