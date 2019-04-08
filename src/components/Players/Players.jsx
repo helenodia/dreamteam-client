@@ -34,7 +34,6 @@ class Players extends Component {
 		name: this.state.player,
 		rating: this.state.rating,
 	});
-		// this.setState({ ...state.player, players: this.state.player})
 	}
 
 	render() {

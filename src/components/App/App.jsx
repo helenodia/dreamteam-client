@@ -24,9 +24,6 @@ const App = ({ submitted }) => (
 export default App;
 
 
-// check loading comp - - won't work w switch? 
-// { !submitted ? <Players /> : <Teams /> }
-// click dispatch changesubmitted from true to false
-// button click handler to move bw pages
+
 
 

@@ -10,7 +10,6 @@ class Teams extends Component {
 			teams: [],
 		}
 		this.handleChange = this.handleChange.bind(this);
-		// this.onSubmit = this.onSubmit.bind(this);
 	}
 
 	handleChange(e) {

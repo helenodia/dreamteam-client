@@ -8,7 +8,6 @@ const mapStateToProps = ({ loaded }) => ({
 
 const mapDispatchToProps = (dispatch) => ({
 	handleLoad: () => dispatch(getTeams()),
-	// handleLoad: () => console.log("loaded"),
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Loading);

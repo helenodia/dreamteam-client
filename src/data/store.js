@@ -6,7 +6,6 @@ import initial from "./initial";
 const reduxDevTools =
     window.__REDUX_DEVTOOLS_EXTENSION__ || compose;
 
-
 const createStoreWithMiddleware = applyMiddleware(
     thunk,
 )(createStore);

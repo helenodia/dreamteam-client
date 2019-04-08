@@ -16,16 +16,8 @@ export const postPlayer = (player) => (dispatch, getState) => {
 	}).then( response => {
 		console.log(response.data)
 		dispatch(addPlayer(response.data))
-		// getState({ player })
-		// history.push("teams")
+		history.push("teams")
 	}).catch( error => console.log(error))
 };
 
-// export const getPlayers = () => (dispatch) => {
-// 	axios.get("/").then(({data}) => {
-// 		dispatch(setPlayers(data.data));
-// 	});
-// }
 
-
-	// axios.get("teams").then(({ data }) => {

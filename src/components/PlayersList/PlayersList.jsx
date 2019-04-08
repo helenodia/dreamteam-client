@@ -1,8 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
 
-// import Players from "../Players";
-
 class PlayersList extends Component {
 	constructor(props) {
 		super(props);
@@ -21,7 +19,6 @@ class PlayersList extends Component {
 
 	render() {
 		const { players } = this.props;
-		// const { players } = this.state;
 
 		return (
 			<Fragment>
