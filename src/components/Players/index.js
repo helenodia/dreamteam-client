@@ -3,6 +3,14 @@ import Players from "./Players";
 import { postPlayer } from "../../data/actions/apiActions";
 import history from "../../data/history";
 
+
+const mapStateToProps = (state) => {
+	return {
+		players: state.players,
+		rating: state.rating,
+	}
+};
+
 const mapDispatchToProps = (dispatch) => {
 	return {
 		handleSubmit: (player) => {
@@ -13,5 +21,5 @@ const mapDispatchToProps = (dispatch) => {
 	};
 };
 
-export default connect(null, mapDispatchToProps)(Players);
+export default connect(mapStateToProps, mapDispatchToProps)(Players);
 

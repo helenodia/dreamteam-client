@@ -15,6 +15,7 @@ export const postPlayer = (player) => (dispatch, getState) => {
 	}).then( response => {
 		console.log(response.data)
 		dispatch(addPlayer(response.data))
+		// getState({ player })
 		history.push("/")
 	}).catch( error => console.log(error))
 };

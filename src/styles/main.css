@@ -1,0 +1,147 @@
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  form {
+    width: 268px; } }
+@media only screen and (min-device-width: 1024px) {
+  form {
+    font-size: 2rem; }
+
+  label {
+    font-size: 2rem; } }
+.btn-reset {
+  text-align: center;
+  background-color: #FFF;
+  border: 4px solid #4185DE;
+  margin: 5%;
+  color: #4185DE;
+  position: relative;
+  box-shadow: 10px 10px 0 0 #4185DE;
+  font-size: 1rem;
+  min-height: 4vh;
+  line-height: 4vh;
+  margin: auto;
+  width: calc(100% - 200px); }
+  .btn-reset:hover {
+    background-color: #4185DE;
+    color: #FFF;
+    border: 4px solid white; }
+  .btn-reset:active {
+    background-color: #4185DE; }
+
+.btn-submit {
+  text-align: center;
+  border: 4px solid #FFB80A;
+  box-shadow: 10px 10px 0 0 #FFB80A;
+  color: #FFB80A;
+  background-color: #FFF;
+  margin: auto;
+  box-shadow: 10px 10px 0 0 #FFB80A;
+  font-size: 1rem;
+  min-height: 4vh;
+  line-height: 4vh;
+  margin: auto;
+  width: calc(100% - 200px); }
+  .btn-submit:hover {
+    background-color: #FFB80A;
+    color: #FFF;
+    border: 4px solid white; }
+  .btn-submit:active {
+    background-color: #FFB80A; }
+
+h3 {
+  font-weight: 2;
+  font-size: 2rem;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+label {
+  font-weight: 2;
+  font-size: 1.3rem;
+  color: #FFF;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  align-items: center; }
+
+a {
+  text-decoration: none; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10% auto auto auto auto 10%;
+  background-color: #58D6C5;
+  width: 100vw;
+  height: 100vh; }
+
+.header {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  display: block;
+  font-family: 'Rammetto One', cursive;
+  margin-block-start: 0.2rem;
+  margin-block-end: 0.2rem;
+  margin-inline-start: 9.5rem;
+  margin-inline-end: 9.5rem;
+  padding: 1rem;
+  font-weight: 1rem;
+  font-size: 3.5rem;
+  background-color: rgba(255, 94, 171, 0.9);
+  text-align: center;
+  color: #FFF; }
+
+.sidebar {
+  grid-column: 2/3;
+  grid-row: 3/6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
+
+.body {
+  grid-column: 1/2;
+  grid-row: 3/6; }
+
+body {
+  font-size: 1rem;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: lighter;
+  font-color: #FFF; }
+
+.background {
+  background-color: #58D6C5;
+  background-size: cover; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between; }
+
+input {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  padding: 5px;
+  margin: 10px 30px 10px 10px;
+  justify-content: center;
+  background-color: #FFF;
+  border: 4px solid #FFB80A;
+  width: 11rem;
+  height: 3rem;
+  color: #FFB80A;
+  position: relative;
+  box-shadow: 10px 10px 0 0 #FFB80A; }
+  input:focus {
+    background-color: #FFB80A;
+    color: #FFF;
+    border: 4px solid white; }
+
+.form-label {
+  color: #FFF; }
+
+/*# sourceMappingURL=main.css.map */

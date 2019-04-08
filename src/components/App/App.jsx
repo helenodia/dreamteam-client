@@ -1,10 +1,10 @@
 import React from "react";
 import { Router, Route, Switch } from "react-router-dom";
+import main from "../../styles/main.css";
 import history from "../../data/history";
 import Players from "../Players";
 import Teams from "../Teams";
 import FourOhFour from "../FourOhFour";
-// import PlayersList from "../PlayersList";
 
 const App = ({ submitted }) => (
   <Router history={ history }>

@@ -10,12 +10,13 @@ class PlayersList extends Component {
 
 		return (
 			<Fragment>
-				<h2>Playing...</h2>
-					<ul>
-						{ players.map((player) => (
-							<li key = { player }> { players } </li>
-						))}
-					</ul>
+				<h3 className="h3">Playing...</h3>
+				<ul>
+					{ players.map((player) => (
+						<li key = { player }> { player.name } </li>
+					))}
+				</ul>
+				<button className="btn-reset">Clear players</button>
 			</Fragment>
 		);
 	}

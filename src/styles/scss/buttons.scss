@@ -1,0 +1,56 @@
+.btn-reset{
+	text-align: center;
+	background-color: #FFF;
+	border: 4px solid #4185DE;
+	margin: 5%;
+	color: #4185DE;
+	position: relative;	
+	box-shadow: 10px 10px 0 0 #4185DE;
+	font-size: 1rem;
+	min-height: 4vh;
+  	line-height: 4vh;
+   	margin: auto;
+  	width: calc(100% - 200px);
+
+	&:hover {
+		background-color: #4185DE;
+    	color: #FFF;
+  		border: 4px solid white;
+	}
+
+	&:active {
+		background-color: #4185DE;
+	}
+}
+
+.btn-submit{
+	text-align:center;
+  	border: 4px solid #FFB80A;
+  	box-shadow: 10px 10px 0 0 #FFB80A;
+  	color: #FFB80A;
+	background-color: #FFF;
+	margin: auto;
+	// position: relative;	
+	box-shadow: 10px 10px 0 0 #FFB80A;
+	font-size: 1rem;
+	min-height: 4vh;
+  	line-height: 4vh;
+   	margin: auto;
+  	width: calc(100% - 200px);
+
+	&:hover {
+		background-color: #FFB80A;
+    	color: #FFF;
+  		border: 4px solid white;
+	}
+
+	&:active {
+		background-color: #FFB80A;
+
+	}
+}
+
+
+
+
+
