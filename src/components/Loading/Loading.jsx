@@ -13,9 +13,10 @@ class Loading extends Component {
 
 		return loaded ? children : (
 			<Fragment>
-				<div className="lds-ripple">
+				<div className="lds-facebook">
+					<div></div><div></div><div></div>
 					<div>
-						<h3>Loading your teams&hellip;</h3>
+						<h3>LOADING...&hellip;</h3>
 					</div>
 				</div>
 			</Fragment>

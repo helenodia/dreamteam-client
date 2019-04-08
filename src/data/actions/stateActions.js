@@ -22,7 +22,13 @@ export const setPlayers = (players) => {
 	return {
 		type: "SET_PLAYERS",
 		players,
-	}
+	};
 };
 
+export const setTeams = (teams) => {
+	return {
+		type: "SET_TEAMS",
+		teams,
+	};
+};
 

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Header from "../Header";
 import PlayersList from "../PlayersList";
+import Loading from "../Loading";
 import Grid from "react-css-grid";
 
 
@@ -40,71 +42,78 @@ class Players extends Component {
 
 		return (
 			<React.Fragment>
-				<Grid gap={10}>
-					<div className="grid background">
-						<div className="header background">
-						    <Header className="header">dreamteam</Header>
+				<Loading>
+					<Grid gap={10}>
+						<div className="grid background">
+							<div className="header background">
+								<Link to="/">
+							    	<Header className="header">DREAMTEAM</Header>
+							    </Link>
+							</div>
+
+							<div className="body background"> 
+								<h3>ADD PLAYERS:</h3>   
+								<form className="container">
+									<label className="form-label">
+										NAME:
+									</label>
+
+									<input 
+										className="form-input" 
+										onChange={ this.handleChange } 
+										value={ this.state.value } 
+										type="text" 
+									/>
+						
+								    <div className="radio">
+								      <label className="form-label">
+								        <input 
+								        	className="radio-input"
+								        	type="radio" 
+								        	value="1" 
+								            checked={this.state.rating === '1'} 
+								            onChange={this.handleOptionChange} />
+								        "enthusiastic"
+								      </label>
+								    </div>
+								    <div className="radio">
+								      <label className="form-label">
+								        <input 
+								        	className="radio-input"
+								        	type="radio" 
+								        	value="2" 
+								            checked={this.state.rating === '2'} 
+								            onChange={this.handleOptionChange} />
+								        not too shabby
+								      </label>
+								    </div>
+								    <div className="radio">
+								      <label className="form-label">
+								        <input 
+								        	className="radio-input"
+								        	type="radio" 
+								        	value="3" 
+								            checked={this.state.rating === '3'} 
+								            onChange={this.handleOptionChange} />
+								        really bloody good
+								      </label>
+								    </div>
+
+									<button 
+										type="submit"
+										onClick={ this.handleSubmit }
+										className="btn-submit">
+										SUBMIT 
+									</button>
+								</form>
+							</div>
+
+							<div className="sidebar background">
+								<PlayersList />
+							</div>	
 						</div>
-
-						<div className="body background"> 
-							<h3>ADD PLAYERS:</h3>   
-							<form className="container">
-								<label className="form-label">
-									NAME:
-								</label>
-
-								<input 
-									className="form-input" 
-									onChange={ this.handleChange } 
-									value={ this.state.value } 
-									type="text" 
-								/>
-					
-							    <div className="radio">
-							      <label className="form-label">
-							        <input 
-							        	type="radio" 
-							        	value="1" 
-							            checked={this.state.rating === '1'} 
-							            onChange={this.handleOptionChange} />
-							        "enthusiastic"
-							      </label>
-							    </div>
-							    <div className="radio">
-							      <label className="form-label">
-							        <input 
-							        	type="radio" 
-							        	value="2" 
-							            checked={this.state.rating === '2'} 
-							            onChange={this.handleOptionChange} />
-							        not too shabby
-							      </label>
-							    </div>
-							    <div className="radio">
-							      <label className="form-label">
-							        <input 
-							        	type="radio" 
-							        	value="3" 
-							            checked={this.state.rating === '3'} 
-							            onChange={this.handleOptionChange} />
-							        too bloody good
-							      </label>
-							    </div>
-
-								<button 
-									type="submit"
-									onClick={ this.handleSubmit }
-									className="btn-submit container-item-end">
-									SUBMIT 
-								</button>
-							</form>
-						</div>
-
-						<div className="sidebar background">
-							<PlayersList />
-						</div>	
-					</div>
-				</Grid>	
+					</Grid>	
+				</Loading>
 			</React.Fragment>
 		);
 	}

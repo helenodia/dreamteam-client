@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Grid from "react-css-grid";
 import Loading from "../Loading";
+import Header from "../Header";
 
 class Teams extends Component {
 	constructor(props) {
@@ -22,21 +23,34 @@ class Teams extends Component {
 
 		return (
 			<React.Fragment>
-			<Grid gap={10}>
-			<Loading>
-				<h1>Teams</h1>
-					<Link to="/">
-						<h2>A Team</h2>
+				<Loading>
+					<Grid 
+						gap={10}>
+							<div className="grid background-teams">
 
-						<h2>B Team</h2>
-						<button>Shuffle teams</button>
-						<button>Start over</button>
-					</Link>
+							<Link to="/">
+								<Header className="header">DREAMTEAM</Header>
+							</Link>
+
+							<div className="body">
+								<h2 className="subheader subheader-a">TEAM A</h2>
+								<p>{teams}</p>
+								<button className="btn-shuffle">SHUFFLE TEAMS</button>
+							</div>	
+
+							<div className="sidebar">
+								<h2 className="subheader subheader-b">TEAM B</h2>
+								<Link to="/">
+									<button className="btn-start-over">START OVER</button>
+								</Link>
+							</div>
+						</div>	
+					</Grid>
 				</Loading>
-				</Grid>
 			</React.Fragment>
 		);
 	}
 };
 
 export default Teams;
+

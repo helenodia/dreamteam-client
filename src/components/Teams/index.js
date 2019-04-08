@@ -10,7 +10,7 @@ const mapStateToProps = ({ players }) => ({ players });
 // };
 
 const mapDispatchToProps = (dispatch) => ({
-		// handleLoad: () => dispatch(setPlayers()),
+		handleLoad: () => dispatch(getTeams),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Teams);
