@@ -10,7 +10,7 @@ class Players extends Component {
 		super(props);
 		this.state = {
 			player: "",
-			players: [],
+			players: ['asdasd', 'asd'],
 			rating: "1",
 		}
 		this.handleChange = this.handleChange.bind(this);
@@ -68,8 +68,8 @@ class Players extends Component {
 								        	className="radio-input"
 								        	type="radio" 
 								        	value="1" 
-								            checked={this.state.rating === '1'} 
-								            onChange={this.handleOptionChange} />
+								            checked={ this.state.rating === '1' } 
+								            onChange={ this.handleOptionChange } />
 								        "enthusiastic"
 								      </label>
 								    </div>
@@ -79,8 +79,8 @@ class Players extends Component {
 								        	className="radio-input"
 								        	type="radio" 
 								        	value="2" 
-								            checked={this.state.rating === '2'} 
-								            onChange={this.handleOptionChange} />
+								            checked={ this.state.rating === '2' } 
+								            onChange={ this.handleOptionChange } />
 								        not too shabby
 								      </label>
 								    </div>
@@ -90,18 +90,20 @@ class Players extends Component {
 								        	className="radio-input"
 								        	type="radio" 
 								        	value="3" 
-								            checked={this.state.rating === '3'} 
-								            onChange={this.handleOptionChange} />
+								            checked={ this.state.rating === '3' } 
+								            onChange={ this.handleOptionChange } />
 								        really bloody good
 								      </label>
 								    </div>
 
+								    <Link to="/teams">
 									<button 
 										type="submit"
 										onClick={ this.handleSubmit }
 										className="btn-submit">
 										SUBMIT 
 									</button>
+									</Link>
 								</form>
 							</div>
 

@@ -17,7 +17,7 @@ class Teams extends Component {
 	}
 
 	render() {
-		const { teams } = this.state;
+		const { teams.teama, teams.teamb } = this.state;
 
 		return (
 			<React.Fragment>

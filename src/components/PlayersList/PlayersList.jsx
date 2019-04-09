@@ -5,7 +5,7 @@ class PlayersList extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			teams: [],
+			players: [],
 		}
 		this.handleLoad = this.handleLoad.bind(this);
 	}
@@ -13,7 +13,7 @@ class PlayersList extends Component {
 	handleLoad(e) {
 		e.preventDefault();
 		this.props.handleLoad({
-			teams: [],
+			players: [],
 		})
 	}
 
@@ -26,13 +26,13 @@ class PlayersList extends Component {
 				<div className="players-list">
 					<ul>
 						{ players.map((player) => (
-							<li key = { player }> { player.name } </li>
+							<li key = { player }> { player.data.name } </li>
 						))}
 					</ul>
 				</div>
 
 				<Link to="/teams">
-					<button 
+					<button
 						className="btn-teams"
 						onClick={ this.handleLoad }>
 						GET TEAMS

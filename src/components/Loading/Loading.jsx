@@ -11,7 +11,7 @@ class Loading extends Component {
 	render() {
 		const { children, loaded } = this.props;
 
-		return loaded ? children : (
+		return (
 			<Fragment>
 				<div className="lds-facebook">
 					<div></div><div></div><div></div>

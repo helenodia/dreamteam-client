@@ -2,25 +2,24 @@ import initial from "../initial";
 
 const setInitial = () => initial;
 
-const addPlayer = (state, action) => ({ 
-	...state, 
-	players: [action.player], 
+export const addPlayer = (state, action) => ({ 
+	// ...state, 
+	players: [...state.players, action.player], 
 		// players: [action.data, ...state.players] 
 
 });
 
-const loaded = (state, { teams }) => ({
+export const loaded = (state, { teams }) => ({
 	...state,
 	// set loaded to true:
 	loaded: true,
 	teams,
 });
 
-const setPlayers = (state) => ({ ...state, players: state.players });
+export const setPlayers = (state) => ({ ...state, players: state.players });
 
-const setTeams = (state, action) => ({
-	...state,
-	teams: [action.data],
+export const setTeams = (state, action) => ({
+	teams: [...state.teams, action.data],
 })
 
 const reducer = (state, action) => { 
