@@ -96,14 +96,12 @@ class Players extends Component {
 								      </label>
 								    </div>
 
-								    <Link to="/teams">
 									<button 
 										type="submit"
 										onClick={ this.handleSubmit }
 										className="btn-submit">
 										SUBMIT 
 									</button>
-									</Link>
 								</form>
 							</div>
 

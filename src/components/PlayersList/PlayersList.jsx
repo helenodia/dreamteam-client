@@ -6,15 +6,32 @@ class PlayersList extends Component {
 		super(props);
 		this.state = {
 			players: [],
+			teamA: [],
+			teamB: [],
 		}
 		this.handleLoad = this.handleLoad.bind(this);
+		this.handleClick = this.handleClick.bind(this);
+
 	}
 
 	handleLoad(e) {
 		e.preventDefault();
 		this.props.handleLoad({
 			players: [],
-		})
+		});
+	}
+
+	handleClick(e) {
+		e.preventDefault();
+		this.props.handleClick({
+			teamA: [],
+			teamB: [],
+		});
+		// this.setState({
+		// 	teamA: this.props.teamA,
+		// 	teamB: this.props.teamB,
+		// })
+
 	}
 
 	render() {
@@ -34,7 +51,7 @@ class PlayersList extends Component {
 				<Link to="/teams">
 					<button
 						className="btn-teams"
-						onClick={ this.handleLoad }>
+						onClick={ this.handleClick }>
 						GET TEAMS
 					</button>
 				</Link>

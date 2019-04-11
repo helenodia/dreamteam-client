@@ -19,7 +19,7 @@ export const loaded = (state, { teams }) => ({
 export const setPlayers = (state) => ({ ...state, players: state.players });
 
 export const setTeams = (state, action) => ({
-	teams: [...state.teams, action.data],
+	teams: [action.teamA, action.teamB],
 })
 
 const reducer = (state, action) => { 

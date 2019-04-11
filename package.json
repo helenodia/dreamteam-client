@@ -6,6 +6,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "gh-pages": "^2.0.1",
+    "history": "^4.9.0",
     "node-sass": "^4.11.0",
     "react": "^16.8.6",
     "react-css-grid": "^2.0.0-0",
