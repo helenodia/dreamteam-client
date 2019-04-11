@@ -14,9 +14,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
 	return {
 		handleSubmit: (player) => {
-			console.log(player);
 			dispatch(postPlayer(player));
-			history.push("/");
 		},
 	};
 };

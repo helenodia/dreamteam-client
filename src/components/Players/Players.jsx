@@ -63,37 +63,39 @@ class Players extends Component {
 									/>
 						
 								    <div className="radio">
-								      <label className="form-label">
+								    	<label className="form-label">
+								    		SKILL LEVEL:
+								    	<br />
 								        <input 
 								        	className="radio-input"
 								        	type="radio" 
 								        	value="1" 
 								            checked={ this.state.rating === '1' } 
 								            onChange={ this.handleOptionChange } />
-								        "enthusiastic"
-								      </label>
+								        	"enthusiastic"
+								    	</label>
 								    </div>
 								    <div className="radio">
-								      <label className="form-label">
+								    	<label className="form-label">
 								        <input 
 								        	className="radio-input"
 								        	type="radio" 
 								        	value="2" 
 								            checked={ this.state.rating === '2' } 
 								            onChange={ this.handleOptionChange } />
-								        not too shabby
-								      </label>
+								        	not too shabby
+								    	</label>
 								    </div>
 								    <div className="radio">
-								      <label className="form-label">
+								    	<label className="form-label">
 								        <input 
 								        	className="radio-input"
 								        	type="radio" 
 								        	value="3" 
 								            checked={ this.state.rating === '3' } 
 								            onChange={ this.handleOptionChange } />
-								        really bloody good
-								      </label>
+								        	really bloody good
+								    	</label>
 								    </div>
 
 									<button 
