@@ -11,7 +11,6 @@ class PlayersList extends Component {
 		}
 		this.handleLoad = this.handleLoad.bind(this);
 		this.handleClick = this.handleClick.bind(this);
-
 	}
 
 	handleLoad(e) {
@@ -24,14 +23,7 @@ class PlayersList extends Component {
 	handleClick(e) {
 		e.preventDefault();
 		this.props.handleClick({
-			teamA: [],
-			teamB: [],
 		});
-		// this.setState({
-		// 	teamA: this.props.teamA,
-		// 	teamB: this.props.teamB,
-		// })
-
 	}
 
 	render() {
@@ -42,8 +34,8 @@ class PlayersList extends Component {
 				<h3 className="h3">PLAYING...</h3>
 				<div className="players-list">
 					<ul>
-						{ players.map((player) => (
-							<li key = { player }> { player.data.name } </li>
+						{ players.map((player, i) => (
+							<li key = { i }> { player.data.name } </li>
 						))}
 					</ul>
 				</div>

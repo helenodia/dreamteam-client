@@ -1,27 +1,7 @@
 import axios from "../axios";
 import history from "../history";
 // import { loaded, addPlayer, setTeams } from "../reducers";
-import { loaded, addPlayer, setTeams, setPlayers } from "./stateActions"
-
-// export const getTeams = (teams) => (dispatch) => {
-// 	axios.post("teams", {
-// 		teamA: teams.teamA,
-// 		teamB: teams.teamB,
-// 	}).then( response => {
-// 	// .then(({teams}) => {
-// 		// dispatch(loaded(data.data));
-// 		dispatch(setTeams(response.data)); 
-// 		history.push("/teams")
-// 	});
-// };
-
-export const getTeams = (teams) => (dispatch) => {
-	axios.get("teams").then( ({data}) => {
-		console.log(data)
-		dispatch(setTeams(data.data));
-		history.push("/teams")
-	});
-};
+import { loaded, addPlayer, setTeams, setPlayers, teamLists } from "./stateActions"
 
 export const postPlayer = (player) => (dispatch, getState) => {
 	axios.post("players", {
@@ -32,5 +12,15 @@ export const postPlayer = (player) => (dispatch, getState) => {
 		dispatch(addPlayer(response.data))
 	}).catch( error => console.log(error))
 };
+
+export const getTeams = (data) => (dispatch, getState) => {
+	axios.get("teams")
+	.then( response => {
+		console.log(response.data)
+		dispatch(teamLists(response.data));
+		history.push("/teams")
+	});
+};
+
 
 

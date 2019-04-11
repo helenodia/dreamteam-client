@@ -10,8 +10,8 @@ class Players extends Component {
 		super(props);
 		this.state = {
 			player: "",
-			players: ['asdasd', 'asd'],
-			rating: "1",
+			players: [],
+			rating: "",
 		}
 		this.handleChange = this.handleChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
@@ -116,6 +116,7 @@ class Players extends Component {
 		);
 	}
 };
+
 
 export default Players;
 

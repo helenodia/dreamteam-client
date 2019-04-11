@@ -25,10 +25,11 @@ export const setPlayers = (players) => {
 	};
 };
 
-export const setTeams = (teams) => {
+export const teamLists = ({ teamA, teamB}) => {
 	return {
 		type: "SET_TEAMS",
-		teams,
+		teamA,
+		teamB,
 	};
 };
 

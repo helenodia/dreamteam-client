@@ -9,20 +9,23 @@ class Teams extends Component {
 		this.state = {
 			teamA: this.props.teamA,
 			teamB: this.props.teamB,
+			// teamA: props.data.teamA,
+			// teamB: [],
 		}
 		// this.handleChange = this.handleChange.bind(this);
+		// console.log(this.state.teamA, this.state.teamB)
+			console.log(this.props.teamA)
+
 	}
 
 	// handleChange(e) {
-	// 	this.setState({ teams: e.currentTarget.value });
+	// 	this.setState({ teamA: this.props.teamA, teamB: this.props.teamB });
 	// }
-
 	render() {
 		const { teamA, teamB } = this.state;
 
 		return (
 			<React.Fragment>
-
 					<Grid 
 						gap={10}>
 						<div className="grid background-teams">
@@ -32,10 +35,16 @@ class Teams extends Component {
 								</Link>
 							</div>
 
+
 							<div className="body">
+							<h1>TEAMS</h1>
 								<h2 className="subheader subheader-a">TEAM A</h2>
 								<div className="team-list-a">
-									<p>{ teamA }</p>
+									<ul>
+										{ teamA.map((team, i) => (
+										<li key = { i }> { team.name } </li>
+										))}
+									</ul>
 								</div>
 
 								<button 
@@ -47,9 +56,13 @@ class Teams extends Component {
 							<div className="sidebar">
 								<h2 className="subheader subheader-b">TEAM B</h2>
 								<div className="team-list-b">
-									<p>{ teamB }</p>
+									<ul>
+										{ teamB.map((team, i) => (
+										<li key = { i }> { team.name } </li>
+										))}
+									</ul>
 								</div>
-
+							
 								<Link to="/">
 									<button 
 										className="btn-start-over">

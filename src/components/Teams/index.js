@@ -4,9 +4,9 @@ import { getTeams } from "../../data/actions/apiActions";
 
 const mapStateToProps = ({ teamA, teamB }) => ({ teamA, teamB });
 
-const mapDispatchToProps = (dispatch) => ({
-		// handleLoad: () => dispatch(getTeams),
-});
+export default connect(mapStateToProps, null)(Teams);
 
-export default connect(mapStateToProps, mapDispatchToProps)(Teams);
+
+
+
 

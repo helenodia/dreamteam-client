@@ -16,17 +16,18 @@ export const loaded = (state, { teams }) => ({
 	teams,
 });
 
-export const setPlayers = (state) => ({ ...state, players: state.players });
+export const setPlayers = (state) => ({ 
+	...state, 
+	players: state.players 
+});
 
-export const setTeams = (state, action) => ({
-	teams: [action.teamA, action.teamB],
-})
+export const setTeams = (state, action) => ({...state, teamA: action.teamA, teamB: action.teamB});
 
 const reducer = (state, action) => { 
 	switch (action.type) { 
 		case "ADD_PLAYER": return addPlayer(state, action); 
-		case "LOADED": return loaded(state, action);
-		case "RESET": return setInitial();
+		// case "LOADED": return loaded(state, action);
+		// case "RESET": return setInitial();
 		case "SET_PLAYERS": return setPlayers(state);
 		case "SET_TEAMS": return setTeams(state, action);
 		default: return state;
@@ -34,9 +35,6 @@ const reducer = (state, action) => {
 };
 
 export default reducer;
-
-
-
 
 
 
