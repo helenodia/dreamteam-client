@@ -9,18 +9,15 @@ class Teams extends Component {
 		this.state = {
 			teamA: this.props.teamA,
 			teamB: this.props.teamB,
-			// teamA: props.data.teamA,
-			// teamB: [],
 		}
-		// this.handleChange = this.handleChange.bind(this);
-		// console.log(this.state.teamA, this.state.teamB)
-			console.log(this.props.teamA)
-
+		this.handleClick = this.handleClick.bind(this);
 	}
 
-	// handleChange(e) {
-	// 	this.setState({ teamA: this.props.teamA, teamB: this.props.teamB });
-	// }
+	handleClick(e) {
+		e.preventDefault();
+		this.props.handleClick();
+	}
+
 	render() {
 		const { teamA, teamB } = this.state;
 
@@ -66,6 +63,14 @@ class Teams extends Component {
 								<Link to="/">
 									<button 
 										className="btn-start-over">
+										ADD MORE PLAYERS									
+									</button>
+								</Link>
+
+								<Link to="/">
+									<button 
+										className="btn-start-over"
+										onClick={ this.handleClick }>
 										START OVER
 									</button>
 								</Link>

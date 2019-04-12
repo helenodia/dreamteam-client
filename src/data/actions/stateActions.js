@@ -33,3 +33,9 @@ export const teamLists = ({ teamA, teamB}) => {
 	};
 };
 
+export const deletePlayers = (players) => {
+	return {
+		type: "DELETE_PLAYERS",
+		players,
+	}
+}
