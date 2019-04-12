@@ -25,11 +25,13 @@ Once all the packages have installed, run:
 
 There is the option to run the app with a local version of the [API](https://github.com/helenodia/dreamteam-api) on Homestead, or using the remote API hosted on AWS. To switch between them, in the client app directory open axios.js (```App > data > axios.js```) and comment out the URL you're not using:
 
-```[...]```
-```export default axios.create({```
-	```baseURL: "http://ec2-35-178-26-8.eu-west-2.compute.amazonaws.com/api/",```
-	```// baseURL: "http://homestead.test/api/", ```
-```[...]```
+```
+[...]
+export default axios.create({
+	baseURL: "http://ec2-35-178-26-8.eu-west-2.compute.amazonaws.com/api/",
+	// baseURL: "http://homestead.test/api/", 
+[...]
+```
 
 ## The Project
 ### The Brief
