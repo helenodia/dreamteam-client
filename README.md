@@ -19,15 +19,23 @@ Clone the git repository and run npm install:
 
 ```npm install```
 
-Once all the packages have installed, run the app:
+Once all the packages have installed, run:
 
 ```npm start```
+
+There is the option to run the app with a local version of the [API](https://github.com/helenodia/dreamteam-api) on Homestead, or using the remote API hosted on AWS. To switch between them, in the client app directory open axios.js (```App > data > axios.js```) and comment out the URL you're not using:
+
+```[...]```
+```export default axios.create({```
+	```baseURL: "http://ec2-35-178-26-8.eu-west-2.compute.amazonaws.com/api/",```
+	```// baseURL: "http://homestead.test/api/", ```
+```[...]```
 
 ## The Project
 ### The Brief
 
 We were set the task of creating a tool which randomly picks 5-a-side football teams from a list of 10 names (10 players = 2 teams of 5) and were given a week to do this.
-<!-- 
+
 ## Planning
 
 ### Plan One
@@ -51,8 +59,7 @@ As a bigger stretch goal, I would have liked to set up user accounts functionali
 ### Plan Two
 During the build I decided, for better or worse, to change course and pause the work I'd done so far in React and Redux to create an API using Laravel so that I could store the players' names and ratings in a table and then work out the random teams serverside. 
 
-My plan was to get the API functioning and then return to REACT and Redux to finalise the app.
-
+My plan was to get the API functioning and then return to REACT and Redux to finalise the app with the follow layout:
 
 *Screen one: 'Players'*
 This screen would feature:
@@ -67,28 +74,29 @@ This screen would feature:
 * A 'shuffle' button, which would submit another GET request to generate new teams from the existing players
 * A 'reset' button, clearing the data stored in local state and in the 'players' table serverside and taking the user back to the Players screen to start over.
 
-### Wireframes
+<!-- ### Wireframes
 
 
 ### Git
 
 ### UI
 
- 
+  -->
 
 ## Learnings
 
-* Set achievable goals
-* Stick with your plan
 
 
 
-### Issues
 
-### Things I'd like to do
+<!-- ### Issues -->
 
-Accessibility
-Testing -->
+### To do:
+
+* Refactor the team sorting logic in Laravel
+* Update the sass styling to make the app responsive 
+* Add aria labels in React to help with [WAI_ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) guidelines
+* Add buttons to the list of players on the Players screen to let the user edit or delete players without having to reset the entire list
 
 
 
