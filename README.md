@@ -8,7 +8,7 @@ The back end repo can be viewed [here](https://github.com/helenodia/dreamteam-ap
 ![dreamteam app demo](https://github.com/helenodia/dreamteam-client/blob/master/public/images/dreamteamapp1.gif)
 
 ## Frontend Setup
-### Prerequisites
+### Required
 
 You will need to have npm installed.
 
@@ -44,8 +44,8 @@ My initial plan was to create a two screen web app with a simple, user-friendly 
 Key features:
  * Allow the user to input player names and experience ratings
  * Display the inputted player names after submission and allow the user to clear all the names and start over
- * Store the inputted players and their experience ratings in a database
- * Generate two random teams serverside, which would be balanced in terms of the players' experience levels by taking into account the inputted ratings
+ * Store the inputted players and their experience ratings in state
+ * Generate two random teams from the user's input, which would be balanced in terms of the players' experience levels by taking into account the inputted ratings
  * Allow the user to reshuffle the teams or start over 
 
 #### Stretch goals
@@ -85,13 +85,15 @@ This screen would feature:
 
 ## Learnings
 
+My overall learning from this project was to set achievable goals for an MVP. Changing course to build an API at a lage stage in the project meant that I wasn't left with much wiggle room to get round any issues that came up during the build and unfortunately I fell behind on my plans for the front-end.
 
+That said, I now have a better idea of what's a realistic goal within a week based on my experience.
 
 
 
 <!-- ### Issues -->
 
-### To do:
+## To do:
 
 * Refactor the team sorting logic in Laravel
 * Update the sass styling to make the app responsive 
