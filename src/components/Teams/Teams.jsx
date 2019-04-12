@@ -37,9 +37,9 @@ class Teams extends Component {
 							    	<Header 
 							    		header="DREAMTEAM"
 							    		subheader="TEAMS"
-							    	 />								</Link>
+							    	 />							
+							    </Link>
 							</div>
-
 
 							<div className="body">
 							<h1>TEAMS</h1>
@@ -54,7 +54,7 @@ class Teams extends Component {
 
 								<Link to="/">
 									<button 
-										className="btn-start-over">
+										className="btn-shuffle">
 										ADD MORE PLAYERS									
 									</button>
 								</Link>

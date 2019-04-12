@@ -5,7 +5,7 @@ import history from "../../data/history";
 import Players from "../Players";
 import Teams from "../Teams";
 import FourOhFour from "../FourOhFour";
-import Loading from "../Loading";
+// import Loading from "../Loading";
 
 const App = ({ submitted }) => (
   <Router basename={process.env.PUBLIC_URL} history={ history }>
@@ -14,6 +14,7 @@ const App = ({ submitted }) => (
         <Route exact path="/" component={ Players } />
         <Route exact path="/teams" component={ Teams } />
         <Route component={ Players } />
+        <Route component={ FourOhFour } />
       </Switch>
     </React.Fragment>
   </Router>
