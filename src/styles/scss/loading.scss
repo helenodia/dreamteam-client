@@ -1,0 +1,16 @@
+.loading{
+	background-color: #FFF;
+	color: #58D6C5;
+	font-size: 2rem;
+	margin: 20rem;
+	font-family: 'Roboto Mono', monospace;
+	text-align: center;
+	box-shadow: 10px 10px 0 0 #58D6C5;
+	border: 4px solid #58D6C5;
+
+	&:hover {
+		background-color: #58D6C5;
+		color: #FFF;
+  		border: 4px solid #FFF;
+	}
+}

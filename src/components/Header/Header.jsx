@@ -6,7 +6,7 @@ const Header = ({
 }) => (
 	<Fragment>
 		<h1>{ header }</h1>
-		<h2>{ subheader }</h2>
+		<h3>{ subheader }</h3>
 	</Fragment>
 );
 

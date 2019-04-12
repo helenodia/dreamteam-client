@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from "react";
-import "./Loading.css";
 
 class Loading extends Component {
 	componentDidMount() {
@@ -11,14 +10,10 @@ class Loading extends Component {
 	render() {
 		const { children, loaded } = this.props;
 
-		return (
-			<Fragment>
-				<div className="lds-facebook">
-					<div></div><div></div><div></div>
-					<div>
-						<h3>LOADING...&hellip;</h3>
-					</div>
-				</div>
+		return loaded ? ( children ) :
+		(
+			<Fragment className="loading">
+				<h3>LOADING...&hellip;</h3>
 			</Fragment>
 		);
 	}

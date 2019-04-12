@@ -1,0 +1,50 @@
+.header{
+	grid-column: 1/3;
+	grid-row: 1/3;
+	font-family: 'VT323', monospace;
+	width: rem;
+	height: auto;
+    margin-block-start: 0.5rem;
+    margin-block-end: 0.5rem;
+    margin-inline-start: 18rem;
+    margin-inline-end: 18rem;
+    padding: 0.1rem;
+    font-size: 2rem;
+    background-color: rgba(255, 94, 171, 0.8);
+    text-align: center;
+	color: #FFF;
+	position: relative;
+	box-shadow: 10px 10px 0 0 rgba(255, 94, 171, 0.8);
+	border: 4px solid #FFF;
+
+	&:hover {
+		background-color: #FFF;
+    	color: rgb(255, 94, 171);
+  		border: 4px rgba(255, 94, 171, 0.8);
+	}
+
+	&:active {
+		background-color: #FFF;
+    	color: rgb(255, 94, 171);
+  		border: 4px rgba(255, 94, 171, 0.8);
+	}
+}
+
+.header-teams{
+	background-color: #6A7DE3;
+}
+
+.subheader{
+	color: #FFF;
+	padding: 0.5rem;
+	width: 30rem;
+	text-align: center;
+}
+
+.subheader-a{
+	background-color: #57C4D3;
+}
+
+.subheader-b{
+	background-color: #FFB80A;
+}

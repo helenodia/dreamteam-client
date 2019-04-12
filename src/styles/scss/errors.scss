@@ -1,0 +1,16 @@
+.error{
+	background-color: #FFF;
+	color: #DC6BA6;
+	font-size: 2rem;
+	margin: 20rem;
+	font-family: 'Roboto Mono', monospace;
+	text-align: center;
+	box-shadow: 10px 10px 0 0 #DC6BA6;
+	border: 4px solid #DC6BA6;
+
+	&:hover {
+		background-color: #DC6BA6;
+		color: #FFF;
+  		border: 4px solid #FFF;
+	}
+}
