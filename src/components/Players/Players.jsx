@@ -44,7 +44,10 @@ class Players extends Component {
 						<div className="grid background">
 							<div className="header ">
 								<Link to="/">
-							    	<Header>DREAMTEAM</Header>
+							    	<Header 
+							    		header="DREAMTEAM"
+							    		subheader="Enter your players'names, judge their skill and get your teams..."
+							    	 />
 							    </Link>
 							</div>
 

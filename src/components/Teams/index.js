@@ -6,6 +6,7 @@ const mapStateToProps = ({ teamA, teamB }) => ({ teamA, teamB });
 
 const mapDispatchToProps = (dispatch) => ({
 		handleClick: () => dispatch(resetPlayers()),
+		// shuffleTeams: () => dispatch(getTeams()),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Teams);

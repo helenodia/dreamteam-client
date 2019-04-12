@@ -1,9 +1,13 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 const Header = ({ 
-		children
+		header,
+		subheader,
 }) => (
-	<h1>{ children }</h1>
+	<Fragment>
+		<h1>{ header }</h1>
+		<h2>{ subheader }</h2>
+	</Fragment>
 );
 
 export default Header;

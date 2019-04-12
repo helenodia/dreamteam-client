@@ -1,8 +1,6 @@
 import { connect } from "react-redux";
 import Players from "./Players";
 import { postPlayer } from "../../data/actions/apiActions";
-import history from "../../data/history";
-
 
 const mapStateToProps = (state) => {
 	return {
