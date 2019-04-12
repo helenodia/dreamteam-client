@@ -1,7 +1,7 @@
 # dreamteam-client
 React/Redux frontend repo for the solo project set in my final week on the [DevelopMe_ coding fellowship](https://developme.training/fellowship/).
 
-The app can be viewed [here](https://helenodia.github.io/dreamteam-client/).
+The app can be viewed [here](http://dreamteam-client.s3-website.eu-west-2.amazonaws.com/).
 
 The back end repo can be viewed [here](https://github.com/helenodia/dreamteam-api).
 
