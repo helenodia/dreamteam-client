@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/dreamteam-client/static/js/runtime~main.0948dc5f.js"
   },
   {
-    "revision": "d005c581af64d83f3f07",
-    "url": "/dreamteam-client/static/js/main.464e032d.chunk.js"
+    "revision": "f4e1ef8ab1f81534c0d5",
+    "url": "/dreamteam-client/static/js/main.f7c1625d.chunk.js"
   },
   {
     "revision": "5724a950c3904357808e",
     "url": "/dreamteam-client/static/js/2.9f847cd2.chunk.js"
   },
   {
-    "revision": "d005c581af64d83f3f07",
+    "revision": "f4e1ef8ab1f81534c0d5",
     "url": "/dreamteam-client/static/css/main.e0e6ed1e.chunk.css"
   },
   {
-    "revision": "18e094bf411b48e5aca9cfc73aec6119",
+    "revision": "70b80120d2da2891d6c32be2b8803d37",
     "url": "/dreamteam-client/index.html"
   }
 ];
