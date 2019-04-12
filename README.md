@@ -5,7 +5,7 @@ The app can be viewed [here](https://helenodia.github.io/dreamteam-client/).
 
 The back end repo can be viewed [here](https://github.com/helenodia/dreamteam-api).
 
-![dreamteam app demo](https://github.com/helenodia/dreamteam-client/public/images/dreamteamapp1.gif)
+![dreamteam app demo](https://github.com/helenodia/dreamteam-client/blob/master/public/images/dreamteamapp1.gif)
 
 ## Frontend Setup
 ### Prerequisites
